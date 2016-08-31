@@ -121,24 +121,4 @@
 
 
 
-- (NSArray *)propertyList {
-    u_int count;
-    Ivar *ivarList = class_copyIvarList(self.class, &count);
-    
-    NSMutableArray *properNames = [[NSMutableArray alloc] init];
-    
-    for (int i = 0; i < count; i++) {
-        Ivar ivar = ivarList[i];
-        NSString *ivarName = [NSString stringWithUTF8String:ivar_getName(ivar)];
-        const void *typeEncoding = ivar_getTypeEncoding(ivar);
-        NSString *type = [NSString stringWithUTF8String:typeEncoding];
-        
-        NSString *key = [ivarName substringFromIndex:1];
-
-        [properNames addObject:key];
-    }
-    free(ivarList);
-    return [properNames copy];
-}
-
 @end

@@ -17,7 +17,6 @@
 
 @interface NSObject (DDLog)
 
-+ (void)resolveDict:(NSDictionary *)dict;
 + (instancetype)runtime_modelWithDict:(NSDictionary *)dict;
 + (NSArray *)properties1;
 @end

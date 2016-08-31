@@ -27,8 +27,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //runtime基础学习
     [self log];
+    //字典转model
     [self dicToModel];
+    //归档解挡
     [self keyAchive];
 }
 - (void)log {

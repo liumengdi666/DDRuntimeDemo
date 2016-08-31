@@ -29,9 +29,7 @@
 }
 
 
-//- (NSDictionary *)arrayContainModelClass {
-//    return @{@"thirdModel":@"DDThirdModel"};
-//}
+//这里只能用类方法
 + (NSDictionary *)objectClassInArray
 {
     return @{@"thirdModel":@"DDThirdModel"};
