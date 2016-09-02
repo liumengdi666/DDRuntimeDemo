@@ -24,7 +24,12 @@ typedef struct property_t {
     
     for (int i = 0; i < outCount; i++) {
         objc_property_t property = properties[i];
-        NSLog(@"/n name:%s---attributes:%s",((propertyStruct)property)->name,((propertyStruct)property)->attributes);
+        NSLog(@"name:%s---attributes:%s",((propertyStruct)property)->name,((propertyStruct)property)->attributes);
+        const char * att = property_getAttributes(property);
+        //事实上苹果已经给出了我们获取属性attributes的方法
+        NSString *atttt = [NSString stringWithUTF8String:att];
+        NSLog(@"att = %s atttt = %@",att, atttt);
+
     }
     
     return propertiesArray;

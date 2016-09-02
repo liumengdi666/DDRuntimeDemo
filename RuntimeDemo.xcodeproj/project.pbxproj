@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1430402D1D78367500CAF193 /* Dog+AddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1430402C1D78367500CAF193 /* Dog+AddProperty.m */; };
+		143040301D790ED500CAF193 /* UIView+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1430402F1D790ED500CAF193 /* UIView+Gesture.m */; };
 		14A5BD7A1D6B002000388642 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A5BD791D6B002000388642 /* main.m */; };
 		14A5BD7D1D6B002000388642 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A5BD7C1D6B002000388642 /* AppDelegate.m */; };
 		14A5BD801D6B002000388642 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A5BD7F1D6B002000388642 /* ViewController.m */; };
@@ -25,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1430402B1D78367500CAF193 /* Dog+AddProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Dog+AddProperty.h"; sourceTree = "<group>"; };
+		1430402C1D78367500CAF193 /* Dog+AddProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Dog+AddProperty.m"; sourceTree = "<group>"; };
+		1430402E1D790ED500CAF193 /* UIView+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gesture.h"; sourceTree = "<group>"; };
+		1430402F1D790ED500CAF193 /* UIView+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gesture.m"; sourceTree = "<group>"; };
 		14A5BD751D6B002000388642 /* RuntimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A5BD791D6B002000388642 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14A5BD7B1D6B002000388642 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,10 +95,14 @@
 				14A5BD7C1D6B002000388642 /* AppDelegate.m */,
 				14A5BD7E1D6B002000388642 /* ViewController.h */,
 				14A5BD7F1D6B002000388642 /* ViewController.m */,
+				1430402E1D790ED500CAF193 /* UIView+Gesture.h */,
+				1430402F1D790ED500CAF193 /* UIView+Gesture.m */,
 				14A5BD8F1D6B003A00388642 /* Person.h */,
 				14A5BD901D6B003A00388642 /* Person.m */,
 				14A5BD921D6B004100388642 /* Dog.h */,
 				14A5BD931D6B004100388642 /* Dog.m */,
+				1430402B1D78367500CAF193 /* Dog+AddProperty.h */,
+				1430402C1D78367500CAF193 /* Dog+AddProperty.m */,
 				14A5BD951D6B004D00388642 /* Cat.h */,
 				14A5BD961D6B004D00388642 /* Cat.m */,
 				14A5BD981D6B005D00388642 /* Mouse.h */,
@@ -195,8 +205,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				14A5BD971D6B004D00388642 /* Cat.m in Sources */,
+				1430402D1D78367500CAF193 /* Dog+AddProperty.m in Sources */,
 				14A5BDA91D6C3DE900388642 /* DDThirdModel.m in Sources */,
 				14A5BDA31D6C298C00388642 /* DDModel.m in Sources */,
+				143040301D790ED500CAF193 /* UIView+Gesture.m in Sources */,
 				14A5BD9A1D6B005D00388642 /* Mouse.m in Sources */,
 				14A5BD801D6B002000388642 /* ViewController.m in Sources */,
 				14A5BD7D1D6B002000388642 /* AppDelegate.m in Sources */,
@@ -356,6 +368,7 @@
 				14A5BD8E1D6B002000388642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

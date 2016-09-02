@@ -16,6 +16,8 @@
 #import <objc/message.h>
 #import "DDModel.h"
 #import "NSObject+DDLog.h"
+#import "Dog+AddProperty.h"
+#import "UIView+Gesture.h"
 
 @interface ViewController ()
 {
@@ -33,6 +35,8 @@
     [self dicToModel];
     //归档解挡
     [self keyAchive];
+    //关联对象
+    [self assocObject];
 }
 - (void)log {
     p = [[Person alloc] init];
@@ -212,6 +216,22 @@ void name1Setter(id self, SEL _cmd, NSString *newName) {
     
     Cat *aCat = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
     NSLog(@"acat.name = %@  age = %f",aCat.name,aCat.age);
+}
+
+- (void)assocObject {
+    //添加属性 dog新增了分类
+    Dog *d = [[Dog alloc] init];
+    d.master = @"jobs";
+    
+    NSLog(@"%@",d.master);
+    
+    
+    //绑定手势  新增了uiview的分类添加方法
+    
+    [self.view setTapActionWithBlock:^{
+        NSLog(@"我是一个点击手势");
+    }];
+    
 }
 
 
